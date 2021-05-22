@@ -1,0 +1,16 @@
+[package]
+name = "rterm"
+version = "0.1.0"
+authors = ["jac3km4 <jac3km4@pm.me>"]
+edition = "2018"
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+piston_window = "0.120"
+rusttype = "0.9.2"
+
+[patch.crates-io]
+# this fork exists to avoid bringing unnecessary image dependencies
+piston-gfx_texture = { git = "https://github.com/jac3km4/gfx_texture", branch = "png" }
