@@ -6,6 +6,7 @@ use piston_window::*;
 use rusttype::Font;
 
 pub mod buffer;
+pub use piston_window::Key;
 
 pub fn run(config: Configuration<'static>, mut handler: impl BufferHandler) -> Result<(), Box<dyn Error>> {
     let mut window: PistonWindow = WindowSettings::new(config.title, (config.width, config.height))
